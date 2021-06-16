@@ -57,15 +57,9 @@ hr{
 }
 /* HEADER  */
 
-.header__contact,
-.header__social ul{
-    display: flex;
-}
+
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 7px 20px;
     background-color: var(--primary);
 }
@@ -90,6 +84,7 @@ header{
     border: 1px solid #333;
     cursor: pointer;
     transition: all 1s;
+    
 }
 .header__social ul li a{
     color: white;
@@ -523,7 +518,7 @@ header{
 
 footer{
     padding: 80px var(--padding);
-    background-color: #000000;
+    background-color: #141415;
     letter-spacing: 1px;
 }
 .footer__item{
@@ -566,6 +561,51 @@ footer ul li i{
     line-height: 30px;
     border: 1px solid #8b8b96;
 }
+
+.email input:first-of-type{
+    outline: none;
+    padding: 14px;
+    background: #fff;
+    font-size: 0.9em;
+    color: #888;
+    width: 70%;
+    margin-right: 1em;
+    border: none;
+    letter-spacing: 2px;
+}
+
+.email input:last-of-type{
+    outline: none;
+    padding: 12px 0;
+    background: #ff4f81;
+    font-size: 1em;
+    color: #fff;
+    width: 20%;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.copyright{
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.copyright p {
+    display: inline;
+    color: white;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: var(--primary);
+    transition: all 0.5s;
+}
+
+.copyright a:hover{
+    color: white;
+}
 @media only screen and (max-width: 739px){
     .navbar-nav{
         background-color: #eee;
@@ -577,6 +617,7 @@ footer ul li i{
 	.contact__phone{
 		margin-right: 3px;
 	}
+
     .carousel-item{
         height: 400px;
     }
@@ -627,7 +668,7 @@ footer ul li i{
 }
 
 
-@media only screen and (min-width: 740px)  and (max-width: 1024px){
+@media only screen and (min-width: 740px)  and (max-width: 991px){
     /* For tablets: */
     .nav-item{
         min-width: 0;

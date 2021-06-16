@@ -47,16 +47,26 @@ $(document).ready(function(){
         appendDots: '.feedback',
         prevArrow: false,
         nextArrow: false,
+        autoplay:true,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 991,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 infinite: true,
                 dots: true
               }
-            }   
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true
+                }
+              }    
         ]
     });
 });
