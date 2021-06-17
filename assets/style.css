@@ -679,7 +679,7 @@ footer ul li i{
     color: #E6EBFF;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    z-index: 1;
+    z-index: 2;
 }
 .control hr{
     padding: 0;
