@@ -668,6 +668,39 @@ footer ul li i{
 }
 
 
+
+/* CONTROL  */
+.control{
+    position: fixed;
+    right: 0;
+    top: 80px;
+    background-color: #0D1326;
+    text-align: center;
+    color: #E6EBFF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+}
+.control hr{
+    padding: 0;
+    margin: 0;
+    height: 1px;
+    width: 90%;
+    background-color: #41414D;
+    margin: 0 auto;
+}
+.control__item{
+    padding: 10px 10px;
+}
+
+.control__item:first-of-type{
+    padding: 20px;
+
+}
+
+.control__feature{
+    padding: 20px 0;
+}
 @media only screen and (min-width: 740px)  and (max-width: 991px){
     /* For tablets: */
     .nav-item{
