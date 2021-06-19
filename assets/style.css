@@ -563,8 +563,12 @@ footer ul li i{
 }
 
 .email input:first-of-type{
+    /* nên để input và button bên trong 1 flex sẽ đẹp hơn */
     outline: none;
-    padding: 14px;
+    /* padding: 14px; */
+    /* không để height của input hoặc button phụ thuộc vào padding, lỡ 1 ngày e đổi font chữ là nó bị lệch height xấu lắm */
+    height: 45px;
+    padding: 0 15px;
     background: #fff;
     font-size: 0.9em;
     color: #888;
@@ -576,7 +580,9 @@ footer ul li i{
 
 .email input:last-of-type{
     outline: none;
-    padding: 12px 0;
+    /* padding: 12px 0; */
+    height: 45px;
+    padding: 0 15px;
     background: #ff4f81;
     font-size: 1em;
     color: #fff;

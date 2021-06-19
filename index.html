@@ -16,7 +16,8 @@
 <body>
 
     <header class="row">
-        <div class="header__contact col-xs-12 col-sm-7 d-flex justify-content-start align-items-center">
+        <div class="header__contact col-sm-7 d-flex justify-content-start align-items-center">
+            <!-- trong bs4 đã bỏ col-xs nha bạn -->
             <div class="contact__phone">
                 <i class="fas fa-phone-alt"></i>
                 <span>+456 123 7890</span>
@@ -27,7 +28,7 @@
             </div>
         </div>
 
-        <div class="header__social col-xs-12 col-sm-5 align-items-center">
+        <div class="header__social col-sm-5 align-items-center">
             <ul class="d-flex justify-content-end">
                 <li>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -169,7 +170,8 @@
 
         </p>
         <div class="row">
-            <div class="col-lg-4 col-sm-12 design__item">
+            <div class="col-lg-4 design__item">
+                <!-- chỗ này không cần col-sm-12 nha bạn, mặc định ko nói gì bs đã hiểu là col-12 rồi, cho đến khi nào bạn định nghĩa khác đi -->
                 <div class="fa fa-desktop ml-0"></div>
                 <h3>Design Course</h3>
                 <ul>
@@ -187,7 +189,7 @@
                     </div>
                 </ul>
             </div>
-            <div class="col-lg-4 col-sm-12 design__item">
+            <div class="col-lg-4 design__item">
                 <div class="fa fa-desktop ml-0"></div>
                 <h3>Design Course</h3>
                 <ul>
@@ -205,7 +207,7 @@
                     </div>
                 </ul>
             </div>
-            <div class="col-lg-4 col-sm-12 design__item">
+            <div class="col-lg-4 design__item">
                 <div class="fa fa-desktop ml-0"></div>
                 <h3>Design Course</h3>
                 <ul>
@@ -231,22 +233,22 @@
         <div class="sub-title">When Climbing The Carrer Ladder</div>
 
         <div class="row stat__list">
-            <div class="stat__item col-xs-12 col-sm-6 col-md-3">
+            <div class="stat__item col-sm-6 col-md-3">
                 <i class="fa fa-graduation-cap"></i>
                 <h6>Graduates</h6>
                 <h1 class="count">45</h1>
             </div>
-            <div class="stat__item col-xs-12 col-sm-6 col-md-3">
+            <div class="stat__item col-sm-6 col-md-3">
                 <i class="fa fa-graduation-cap"></i>
                 <h6>Graduates</h6>
                 <h1 class="count">165</h1>
             </div>
-            <div class="stat__item col-xs-12 col-sm-6 col-md-3">
+            <div class="stat__item col-sm-6 col-md-3">
                 <i class="fa fa-graduation-cap"></i>
                 <h6>Graduates</h6>
                 <h1 class="count">563</h1>
             </div>
-            <div class="stat__item col-xs-12 col-sm-6 col-md-3">
+            <div class="stat__item col-sm-6 col-md-3">
                 <i class="fa fa-graduation-cap"></i>
                 <h6>Graduates</h6>
                 <h1 class="count">245</h1>
@@ -260,7 +262,7 @@
 
         <div class="offer__list">
             <div class="row">
-                <div class="offer__item col-lg-4 col-12">
+                <div class="offer__item col-lg-4">
                     <div class="offer__content">
                         <i class="fa fa-graduation-cap"></i>
                         <h2>UNDERGRADUATE STUDY</h2>
@@ -269,7 +271,7 @@
                     </div>
 
                 </div>
-                <div class="offer__item col-lg-4 col-12">
+                <div class="offer__item col-lg-4">
                     <div class="offer__content">
                         <i class="fa fa-graduation-cap"></i>
                         <h2>UNDERGRADUATE STUDY</h2>
@@ -277,7 +279,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="offer__item col-lg-4 col-12">
+                <div class="offer__item col-lg-4">
                     <div class="offer__content">
                         <i class="fa fa-graduation-cap"></i>
                         <h2>UNDERGRADUATE STUDY</h2>
@@ -285,7 +287,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="offer__item col-lg-4 col-12">
+                <div class="offer__item col-lg-4">
                     <div class="offer__content">
                         <i class="fa fa-graduation-cap"></i>
                         <h2>UNDERGRADUATE STUDY</h2>
@@ -293,7 +295,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="offer__item col-lg-4 col-12">
+                <div class="offer__item col-lg-4">
                     <div class="offer__content">
                         <i class="fa fa-graduation-cap"></i>
                         <h2>UNDERGRADUATE STUDY</h2>
@@ -301,7 +303,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="offer__item col-lg-4 col-12">
+                <div class="offer__item col-lg-4">
                     <div class="offer__content">
                         <i class="fa fa-graduation-cap"></i>
                         <h2>UNDERGRADUATE STUDY</h2>
@@ -414,8 +416,8 @@
 
                 </div>
             </div>
-            <div class="event__item d-flex flex-column-reverse flex-lg-row flex-md-row">
-
+            <div class="event__item d-flex flex-column-reverse flex-md-row">
+                <!-- do bs là mobile first thì chỉ cần để flex-md-row thì màn hình lg tự ăn luôn nha bạn, nhưng bạn đã dùng được class này là khá giỏi :)) -->
                 <div class="event__content">
                     <div class="event__content-title">
                         SIT AMET JUSTO VITAE
@@ -440,12 +442,12 @@
 
     <footer>
         <div class="row">
-            <div class="col-lg-4 col-md-12 footer__item">
+            <div class="col-lg-4 footer__item">
                 <h4>About Us</h4>
                 <p>Nam libero tempore cum vulputate id est id, pretium semper enim. Morbi viverra congue nisi vel
                     pulvinar posuere sapien eros.</p>
             </div>
-            <div class="col-lg-4 col-md-12 footer__item">
+            <div class="col-lg-4 footer__item">
                 <h4>Latest News</h4>
                 <ul>
                     <li><i class="fas fa-arrow-right"></i>Lorem ipsum neque vulputate</li>
@@ -456,7 +458,7 @@
                 </ul>
                 
             </div>
-            <div class="col-lg-4 col-md-12 footer__item">
+            <div class="col-lg-4 footer__item">
                 <h4>Contact Info</h4>
                 <div class="contact__item">
                     <span class="icon">
